@@ -1,0 +1,31 @@
+{
+  "bookendVersion": "v1.0",
+  "shareProviders": [
+    "whatsapp",
+	{
+      "provider": "facebook",
+      "app_id": "FACEBOOK-APP-ID"
+    },
+    {
+      "provider": "twitter",
+      "text": "Краткое описание \"Название истории\" для твита."
+    },
+    {
+      "provider": "pinterest",
+      "media": "https://via.placeholder.com/1200x1600"
+    },
+    "email"
+  ],
+  "components": [
+    {
+      "type": "heading",
+      "text": "Узнать больше"
+    },
+    {
+      "type": "small",
+      "title": "Название сайта",
+      "url": "https://путь-к-другой-истории-или-странице",
+      "image": "https://via.placeholder.com/200x200"
+    }
+  ]
+}

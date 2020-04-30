@@ -1,0 +1,358 @@
+<!doctype html>
+<html ⚡ lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <!-- Если есть видео -- раскоментировать эту строку, а также и блок видео в середине этого файла: -->
+  <!-- <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script> -->
+  
+  <!-- Если есть счётчики, например Google Analytics и/или Яндекс.Метирика -- раскоментировать эту строку, а также и сам(и) счётчик(и) внизу этого файла: -->
+  <!--  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script> -->
+
+  <!-- Если нет "обычной" (не AMP) страницы-компаньона для этой истории, прописать путь к этой странице (т.е. к самой себе): -->
+  <link rel="canonical" href="https://абсолютный-путь-к-этой-amp-странице">
+  
+  <!-- Если же есть "обычная" (не AMP) страница-компаньона для этой истории, прописать путь к той странице: 
+   <link rel="canonical" href="https://абсолютный-путь-к-обычной-странице">
+   А на "обычной" (не AMP) странице-компаньоне для этой истории прописать путь к этой странице:
+   <link rel="amphtml" href="https://абсолютный-путь-к-этой-amp-странице">
+   Обратите внимание, что в этом случае значение rel="amphtml"!
+   -->
+  
+  <title>Название истории</title> 
+  <meta name="description" content="Краткое описание истории." />
+  <link rel="icon" type="image/png" href="https://via.placeholder.com/48x48">
+  
+  
+  <!-- Разметка (структурированные данные) для Google.
+      Указать реальные данные: названия, пути (относительные или абсолютные) к изображениям, 
+	  дату публикации и обновления (совпадают при первой публикации). -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://абсолютный-путь-к-этой-amp-странице"
+      },
+      "name": "Название сайта",
+      "headline": "Название истории",
+      "description": "Краткое описание истории.",
+      "image": [
+        "https://via.placeholder.com/1200x1600"
+      ],
+      "datePublished": "2020-04-30T06:05+03:00",
+      "dateModified": "2020-04-30T06:05+03:00",
+      "author": {
+        "@type": "Person",
+        "name": "Имя автора (человек или коллектив)"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Название организации, ИП, или бренда",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://via.placeholder.com/200x200"
+        }
+      }
+    }
+  </script>
+  <!-- / Конец разметка для Google. -->
+
+  <!-- Разметка для соцсетей. Необязательно. Указать реальные данные: названия, описание, пути (только абсолютные!) к изображениям, дату публикации -->
+  <meta property="fb:app_id" content="FACEBOOK-APP-ID" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:url" content="https://абсолютный-путь-к-этой-amp-странице" />
+  <meta property="og:site_name" content="Название сайта" />
+  <meta property="og:type" content="article" />
+  <meta property="og:article:published_time" content="2020-04-30T06:05+03:00" />
+  <meta property="og:title" content="Название истории" /> 
+  <meta property="og:description" content="Краткое описание истории." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630" /> 
+  <meta property="og:image:alt" content="Название истории" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Название истории" />
+  <meta name="twitter:description" content="Краткое описание истории." />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630" />
+  <meta name="twitter:image:alt" content="Название истории" />
+
+  <meta property="vk:image" content="https://via.placeholder.com/1200x536" />
+  <!-- / Конец разметка для соцсетей. -->
+
+  <!-- Шрифт -- можно использовать другой: -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+  
+  
+  <!-- Системный стиль. Нельзя редактировать, нельзя выносить во внешний файл! -->
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+
+      to {
+        visibility: visible
+      }
+    }
+  </style><noscript>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+    </style>
+  </noscript>
+  <!-- / Конец системный стиль. -->
+
+  <!-- Пользовательский стиль. Можно редактировать, но нельзя выносить во внешний файл. -->
+  <style amp-custom>
+    amp-story {
+      font-family: 'Oswald', sans-serif;
+      color: #fff;
+    }
+
+    amp-story-page {
+      background-color: #000;
+    }
+
+    h1 {
+      font-weight: bold;
+      font-size: 2.7em;
+      line-height: 1.174;
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 1.3em;
+      line-height: 1.5em;
+    }
+
+    amp-story-grid-layer.bottom {
+      align-content: end;
+    }
+
+    amp-story-grid-layer.noedge {
+      padding: 0px;
+    }
+
+    amp-story-grid-layer.center-text {
+      align-content: center;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+    }
+
+    .banner-text {
+      text-align: center;
+      background-color: #000;
+      line-height: 2em;
+    }
+  </style>
+  <!-- / Конец пользовательский стиль. -->
+</head>
+
+<body>
+  <!-- Тело истории. Указать реальные данные: названия, описание, пути (абсолютные или относительные) к изображениям: -->
+  <amp-story standalone title="Название истории" publisher="Название сайта" publisher-logo-src="https://via.placeholder.com/200x200"
+    poster-portrait-src="https://via.placeholder.com/1200x1600">
+
+    <amp-story-page id="cover">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="https://via.placeholder.com/900x1600/ff0000" width="900" height="1600" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <h1>Название истории</h1>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom">
+        <p data-text-background-color="rgba(0, 0, 0, 0.5)">
+          Краткое описание истории.
+        </p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="first">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="https://via.placeholder.com/900x1600/00ff00" width="900" height="1600" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom">
+        <p data-text-background-color="rgba(0, 0, 0, 0.5)" animate-in="fly-in-left">
+          Описание первого кадра.
+        </p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="second">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="https://via.placeholder.com/900x1600/0000ff" width="900" height="1600" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom">
+        <p data-text-background-color="rgba(0, 0, 0, 0.5)" animate-in="fly-in-right">
+          Описание второго кадра.
+        </p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+	<!-- Если есть видео -- раскомментировать и указать относительный или абсолютный путь к реальному видео-файлу (вместо ./my-video.mp4): -->
+    <!-- <amp-story-page id="video" auto-advance-after="my-video">
+      <amp-story-grid-layer template="fill">
+        <amp-video id="my-video" autoplay width="900" height="1600" poster="https://via.placeholder.com/900x1600/ffff00" layout="responsive">
+          <source src="./my-video.mp4" type="video/mp4">
+        </amp-video>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom">
+        <p data-text-background-color="rgba(0, 0, 0, 0.5)" animate-in="fly-in-right">
+          Описание видео.
+        </p>
+      </amp-story-grid-layer>
+    </amp-story-page> -->
+
+    <amp-story-page id="third">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="https://via.placeholder.com/900x1600/00ffff" width="900" height="1600" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom">
+        <p data-text-background-color="rgba(0, 0, 0, 0.5)" animate-in="fly-in-bottom">
+          Описание третьего кадра.
+        </p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="fourth">
+      <amp-story-grid-layer template="fill">
+        <amp-img src="https://via.placeholder.com/900x1600/ff00ff" width="900" height="1600" layout="responsive">
+        </amp-img>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom">
+        <p data-text-background-color="rgba(0, 0, 0, 0.5)" animate-in="fly-in-left">
+          Описание четвёртого кадра.
+        </p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+
+    <amp-story-page id="collage" auto-advance-after="2s">
+      <amp-story-grid-layer template="vertical" class="noedge">
+        <div class="wrapper">
+          <amp-img src="https://via.placeholder.com/900x1600/00ff00" width="900" height="1600" layout="responsive" animate-in="fade-in"
+            animate-in-delay="0.4s">
+          </amp-img>
+          <amp-img src="https://via.placeholder.com/900x1600/0000ff" width="900" height="1600" layout="responsive" animate-in="fade-in"
+            animate-in-delay="0.6s">
+          </amp-img>
+          <amp-img src="https://via.placeholder.com/900x1600/00ffff" width="900" height="1600" layout="responsive" animate-in="fade-in"
+            animate-in-delay=".8s">
+          </amp-img>
+          <amp-img src="https://via.placeholder.com/900x1600/ff00ff" width="900" height="1600" layout="responsive" animate-in="fade-in"
+            animate-in-delay="1s">
+          </amp-img>
+        </div>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="center-text">
+        <p class="banner-text" animate-in="fly-in-top">Название истории</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+	
+	<!-- Если есть счётчик Google Analytic, раскоментировать блок ниже, 
+	вместо UA-XXXXXX указать реальный идентификатор; 
+	также раскомментировать соответствующую строку вверху файла. -->
+	<!-- <amp-analytics type="googleanalytics">
+      <script type="application/json">
+              {
+                "vars": {
+                  "account": "UA-XXXXXX"
+                },
+                "triggers": {
+                  "default pageview": {
+                    "on": "visible",
+                    "request": "pageview",
+                    "vars": {
+                      "title": "Название истории"
+                    }
+                  }
+                }
+              }
+          </script>
+    </amp-analytics> -->
+
+	<!-- Если есть счётчик Яндекс Метрика, раскоментировать блок ниже, 
+	вместо XXXXXX указать реальный идентификатор; 
+	также раскомментировать соответствующую строку вверху файла. -->
+    <!-- <amp-analytics type="metrika">
+      <script type="application/json">
+        {
+          "vars": {
+            "counterId": "XXXXX",
+            "yaParams": "{\"title\":\"Название истории\"}"
+          }
+        }
+      </script>
+    </amp-analytics>-->
+	
+    <amp-story-bookend src="./bookend.json" layout="nodisplay"></amp-story-bookend>
+  </amp-story>
+
+</body>
+
+</html>
